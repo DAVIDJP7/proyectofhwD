@@ -2,8 +2,7 @@ body {
     color: black;
     font-weight: 900;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-image: url("https://i2.wp.com/www.bannerswith.com/wp-content/uploads/2019/04/Background-Color-58.jpg?fit=1200%2C675&ssl=1");
-    background-repeat:no-repeat center center fixed;
+background-color: rgb(114, 220, 244);    background-repeat:no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -243,4 +242,189 @@ p {
       transform:rotate(-2deg);
     }
 
+    header {
+      grid-column: 1 / 13;
+      grid-row: 1;
+    }
+    
+    article {
+      grid-column: 4 / 13;
+      grid-row: 2;
+    }
+    
+    aside {
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+    
+    footer {
+      grid-column: 1 / 13;
+      grid-row: 3;
+    }
+            body {
+                width: 90%;
+                max-width: 900px;
+                margin: 2em auto;
+                font: .9em/1.2 Arial, Helvetica, sans-serif;
+            }
+    
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, minmax(0,1fr));
+                gap: 20px;
+            }
+    
+            header,
+            footer {
+                border-radius: 5px;
+                padding: 10px;
+                background-color:rgb(0 154 255);
+                border: 2px solid rgb(79,185,227);
+            }
+    
+            aside {
+                border-right: 1px solid #999;
+            }
+            #myImg {
+              border-radius: 5px;
+              cursor: pointer;
+              transition: 0.3s;
+            }
+            #myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.btn-flotante {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	background-color: #3d25d8;
+	padding: 18px 30px; 
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.btn-flotante:hover {
+	background-color: #2ca5a5;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+nav {
+  text-align: left; 
+font-family: Comic Sans MS; 
+font-weight:bold; 
+font-size: 16px; 
+color: #3d25d8; 
+}
+.seven h1 {
+  text-align: center;
+      font-size:30px; font-weight:300; color:rgb(255, 255, 255); letter-spacing:1px;
+      text-transform: uppercase;
   
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .seven h1:after,.seven h1:before {
+      content: " ";
+      display: block;
+      border-bottom: 3px solid rgb(255, 0, 0);
+      border-top: 3px solid #fb0303;
+      height: 5px;
+    background-color:rgb(0 154 255) ;
+  }
+  * {
+    box-sizing: border-box;
+  }

@@ -520,11 +520,12 @@ button.fancy {
     transition: width 0.5s ease-out, right 0.3s ease-out;
 }
   
-    &:hover {
+    :hover {
     color: white;
     background: black;
+	    }
     
-    &::before {
+    :before {
     width: 0.9375rem;
     background: white;
     }
@@ -544,6 +545,4 @@ button.fancy {
     width: 0;
   }
    
-}
 
-}

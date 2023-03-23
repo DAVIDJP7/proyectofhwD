@@ -429,12 +429,11 @@ color: #3d25d8;
     box-sizing: border-box;
   
    }
-
 .floating-buttons {
   position: fixed;
   top: 50%;
-  left: 20px;
   transform: translateY(-50%);
+  z-index: 999; /* Para que los botones estén por encima del contenido */
 }
 
 .floating-buttons a {
@@ -450,3 +449,14 @@ color: #3d25d8;
 .floating-buttons a:hover {
   background-color: #0056b3;
 }
+
+/* Estilos para los botones en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .floating-buttons {
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+

@@ -431,7 +431,7 @@ color: #3d25d8;
    }
 
 .floating-buttons {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   transform: translateY(-50%);

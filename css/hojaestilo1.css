@@ -430,8 +430,8 @@ color: #3d25d8;
   
    }
 .floating-buttons {
-  position: fixed;
-  top: 50%;
+  absolute;
+  left: 0;
   transform: translateY(-50%);
   z-index: 999; /* Para que los botones estén por encima del contenido */
 }

@@ -44,5 +44,14 @@
 <author>jipeda_aliesma20@iesmedinaazahara.es</author>
 <category>SOFTWARE PORTABLE</category>
 </item>
+  
+  <item>
+<title>RECUPERACIÓN DEL S.O</title> 
+<descriptionEn este artículo encontrará información útil sobre la creación y restauración de un S.O a mediante diferentes métodos.</description>
+<link>https://davidjp077.github.io/davidjp077/pages/Clonezilla.html</link>
+<author>jipeda_aliesma20@iesmedinaazahara.es</author>
+<category>RESTAURAR S.O</category>
+</item>
+  
 </channel>
 </rss>

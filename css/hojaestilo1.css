@@ -430,3 +430,23 @@ color: #3d25d8;
   
    }
 
+.floating-buttons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.floating-buttons a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.floating-buttons a:hover {
+  background-color: #0056b3;
+}

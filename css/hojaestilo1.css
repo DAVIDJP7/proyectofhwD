@@ -429,11 +429,13 @@ color: #3d25d8;
     box-sizing: border-box;
   
    }
+
 .floating-buttons {
   position: absolute;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
-  z-index: 999; /* Para que los botones estén por encima del contenido */
+  z-index: 999;
 }
 
 .floating-buttons a {
